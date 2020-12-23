@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-item {
+/* Create three equal columns that sits next to each other */
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+  .text-item div {
+    max-width: 38em;
+    padding: 5em 6em 0 6em;
+  }
+
+.box-item {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+  .box-item div {
+    text-align: center;
+    padding: 7em;
+  }
+
+.header-text {
+  text-align: left;
+  font-size: 4em;
+  margin-bottom: -0.2em;
+}
+
+.info-text {
+  align-self: left;
+  font-size: x-large;
+  opacity: 0.6;
+}
+
+.picture-item {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+  .imgwrap {
+    width: 70%;
+    margin-right: 1em;
+    margin-top: -1em;
+  }
+
+  .imgwrap img{
+    display: block;
+    width: 100%;
+    max-width: auto;
+  }
+
+.button-item {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+} 
+
+.join-button {
+  margin-left: 7.5em;
+  margin-bottom: 0.5em;
+  height: 3.5em;
+  width: 11.5em;
+  color: black;
+  border: transparent;
+  background-color: white;
+  border-radius: 23px;
+  box-shadow: 0 3px 1px 0 darkslategray;
+}
+
+.navbar{
+  list-style: none;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 3em 5em 3em 5em;
+}
+
+
+a:link, a:visited {
+  text-decoration: none;
+  color: darkslategray;
+  background-color: transparent;
+  
+}
+a:hover {
+  color: black;
+}
+
+/* Responsive layout - */
+@media (max-width: 800px) {
+  .container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+#popup-nav {
+  display: none;
+}
+
+  /*Om jag ska fixa dropdownknapp till menyn senare*/
+  /*<button class="dropbtn">Menu</button>*/
+  /* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .navbar a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .navbar {
+    display: block;
+  }  */
+
+}
