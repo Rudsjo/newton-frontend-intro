@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.container {
+display: -webkit-flex;
+display: flex;
+}
+
+.column {
+-webkit-flex: 1;
+-ms-flex: 1;
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+
+/*#region Hello there*/
+
+.text-item {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+.header-text {
+    text-align: center;
+    font-size: 4em;
+    padding-right: 1em;
+    }
+    
+.picture-item {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    }
+    
+    .imgwrap {
+        width: 20%;
+        margin-right: 6em;
+        margin-top: 2.5em;
+    }
+    
+    .imgwrap img{
+        display: block;
+        width: 100%;
+        max-width: auto;
+    }
+
+/*#endregion */
+
+/*#region Navbar*/
+
+.navbar{
+    list-style: none;
+    text-align: center;
+    }
+    
+    .navbar a {
+    display: inline-block;
+    padding: 2em 5em 2em 5em;
+    }
+    
+    
+    a:link, a:visited {
+    text-decoration: none;
+    color: darkslategray;
+    background-color: transparent;
+    
+    }
+    a:hover {
+    color: black;
+    }
+
+/*#endregion */
+
+/*#region Whats on your mind*/
+
+.contact-text {
+    text-align: left;
+    color: white;
+    font-size: 3em;
+    max-width: 11em;
+    padding-top: 0.8em;
+    padding-left: 2em;
+    }
+
+.labeltext {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputbox{
+    width: 24em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.textbox {
+    width: 20em;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box-item {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+    .box-item form {        
+      padding: 5em 0em 4em 2em;  
+    }
+/*#endregion */
+
+/*#region Buttons*/
+
+.button-item {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  } 
+  
+  .join-button {
+    margin-bottom: 0.5em;
+    height: 3em;
+    width: 10em;
+    color: black;
+    border: transparent;
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 0 1px 1px 0 darkslategray;
+  }
+
+/*#endregion */
+
+
+  /* Responsive layout - */
+@media (max-width: 800px) {
+    .container {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  
+    .imgwrap {
+        width: 50%;
+        margin-right: 2em;
+        margin-top: 1.5em;
+        margin-left: -6em;
+    }
+    
+    .imgwrap img{
+        display: block;
+        width: 100%;
+        max-width: auto;
+    }
+
+      
+.header-text {
+    text-align: center;
+    font-size: 3em;
+    padding-right: 1em;
+    margin-left: -0.5em;
+    max-width: 7em;
+    }
+
+.contact-text {
+    text-align: left;
+    font-size: 3em;
+    max-width: 15em;
+    padding-top: 0.1em;
+    padding-left: 0.5em;
+    color: white;
+    }
+
+.box-item form {        
+    padding: 0em 0em 4em 2em;  
+    }
+
+.navbar a {
+    display: inline-block;
+    padding: 2em 4em 2em 4em;
+    }
+    
+}
+
+
+/*#region About us*/
+
+/*#endregion */
